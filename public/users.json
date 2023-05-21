@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "User Test",
+    "email": "test@test.com",
+    "password": "123123",
+    "phone": "555-555-555"
+  },
+  {
+    "id": 2,
+    "name": "Ire Loaiza",
+    "email": "ire@viviendoenamarillo.com",
+    "password": "123456",
+    "phone": "222-222-222"
+  },
+  {
+    "id": 3,
+    "name": "Ali Espinoza",
+    "email": "ali@viviendoenamarillo.com",
+    "password": "123456",
+    "phone": "333-333-333"
+  }
+]
