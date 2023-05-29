@@ -2,52 +2,75 @@ import { createContext, useEffect, useState } from "react";
 
 export const UserContext = createContext();
 
-const getUsers = async () => {
-  const res = await fetch("users.json");
-  const users = await res.json();
-  return users;
-};
+const initialStateUser = localStorage.getItem("user")
+  ? JSON.parse(localStorage.getItem("user"))
+  : null;
 
-//Se usa el initialStateUser para guardar los datos del usuario en el Local Storage:
-const initialStateUser = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null;
+const initialStateUsers = localStorage.getItem("users")
+  ? JSON.parse(localStorage.getItem("users"))
+  : [];
 
 const UserProvider = ({ children }) => {
-  //el useState deberia ser --> useState(null) solo en este caso vamos a gusrdarlo en el LocalStorage para que no se pierdan los datos, por eso aquí colocamos --> useState(initialStateUser), pero NUNCA se guardan datos de inicio de sesion en el LocalStorage:
-  const [ user, setUser] = useState(initialStateUser);
+  const [users, setUsers] = useState(initialStateUsers);
+  const [user, setUser] = useState(initialStateUser);
 
-  //Cada vez que el usuario cambie, va a entrar a este useEffect y se va a guardar en el Local Storage, si no vamos a guardar no sería necesario usar este useEffect.
+  const getUsers = async () => {
+    const res = await fetch("users.json");
+    const users = await res.json();
+    setUsers(users);
+  };
+
   useEffect(() => {
-    if(user) {
-      localStorage.setItem('user', JSON.stringify(user));
+    localStorage.setItem("users", JSON.stringify(users));
+  }, [users]);
+
+  useEffect(() => {
+    if (users.length === 0) {
+      getUsers();
+    }
+  }, []);
+
+  useEffect(() => {
+    if (user) {
+      localStorage.setItem("user", JSON.stringify(user));
     }
   }, [user]);
 
-  const login = async (email, password) => {
-    const users = await getUsers();
+  const login = (email, password) => {
     const userDB = users.find(
       (item) => item.email === email && password === item.password
     );
-  if (userDB){
-    setUser(userDB)
-  } else {
-    setUser(null);
-  }
+    if (userDB) {
+      setUser(userDB);
+    } else {
+      setUser(null);
+    }
 
-return userDB;
-
+    return userDB;
   };
 
   const register = (user) => {
+    const userDB = users.find((item) => item.email === user.email);
+    if (userDB) return userDB;
     setUser(user);
+    setUsers([...users, user]);
   };
 
   const logout = () => {
-    setUser(null)
-    localStorage.removeItem('user')
+    setUser(null);
+    localStorage.removeItem("user");
+  };
+
+  const updateUser = (user) => {
+    setUser(user);
+    const usersUpdate = users.map((item) =>
+      item.id === user.id ? user : item
+    );
+    setUsers(usersUpdate);
   };
 
   return (
-    <UserContext.Provider value={{ user, login, logout, register  }}>
+    <UserContext.Provider value={{ user, login, logout, register, updateUser }}>
       {children}
     </UserContext.Provider>
   );

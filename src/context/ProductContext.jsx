@@ -1,14 +1,11 @@
 import { createContext, useEffect, useState } from "react";
 
-
-
 export const ProductContext = createContext();
 
 const initialProductState = localStorage.getItem("products")
   ? JSON.parse(localStorage.getItem("products"))
   : [];
 
-// eslint-disable-next-line react/prop-types
 const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState(initialProductState);
 

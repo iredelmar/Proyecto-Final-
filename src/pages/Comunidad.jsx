@@ -44,7 +44,7 @@ const Comunidad = () => {
         <article className="shadow-md p-4 rounded">
           <div className="h-16 mb-6">
             <h1 className="art-comunidad  mt-4 lg:mt-0 text-violet-600">
-              Listado de Médicos 
+              Listado de Médicos
               <br />
               Especialistas en Endometriosis
             </h1>
@@ -83,9 +83,8 @@ const Comunidad = () => {
         <article className="shadow-md p-4 rounded">
           <div className="h-16 mb-6">
             <h1 className="art-comunidad  mt-4 lg:mt-0 text-violet-600 ">
-              Descuentos en Laboratorio 
-              <br />
-              y Exámenes de Diagnóstico
+              Descuentos en Laboratorio
+              <br />y Exámenes de Diagnóstico
             </h1>
           </div>
 
@@ -115,8 +114,6 @@ const Comunidad = () => {
             Ver más
           </button>
         </article>
-
-        
       </div>
     </div>
   );

@@ -21,10 +21,10 @@ body {
   flex-direction: column;
   text-align: center;
   margin: 3%;
+  min-height: 100vh;
 }
 
 nav {
-  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   position: sticky;
@@ -79,6 +79,12 @@ nav {
   justify-content: space-around;
 }
 
+.text-info{
+font-family: "Sarabun", sans-serif;
+font-size: 20px;
+}
+
+
 .form-container {
   height: 400px;
   margin-right: auto;
@@ -86,17 +92,31 @@ nav {
   font-family: "Sarabun", sans-serif;
 }
 
-.img-product {
-  height: 400px;
-  border-radius: 10px;
+.filter-container {
+  font-family: "Sarabun", sans-serif;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 40px;
 }
 
+.products-buttons {
+  font-family: "Sarabun", sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* .img-product {
+  height: 400px;
+  border-radius: 10px;
+} */
+
 .img-comunidad {
-  height:300px;
+  height: 300px;
   border-radius: 10px;
   width: 400px;
   margin: auto;
-} 
+}
 
 .precio {
   font-size: 18px;
@@ -105,20 +125,12 @@ nav {
   font-family: "Sarabun", sans-serif;
 }
 
-.products-container .product-name{
-font-size: 18px;
+.products-container .product-name {
+  font-size: 18px;
 }
 
-.video{
+.video {
   border-radius: 5px;
-  
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-
-  /* Estilos del footer */
 }
 
 .footer {

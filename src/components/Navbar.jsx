@@ -1,9 +1,13 @@
 import { NavLink } from "react-router-dom";
 import UserIcon from "./icons/UserIcon";
+import { useContext } from "react";
 import { UserContext } from "../context/UserContext";
-// import { useProductContext } from "../context/ProductContext";
+import { FavoritesContext } from "../context/FavoritesContext";
 
 const Navbar = () => {
+  const { user, logout } = useContext(UserContext);
+  const { favorites } = useContext(FavoritesContext);
+
   const handleMenu = () => {
     console.log("me diste click");
     menu.classList.toggle("hidden");
@@ -12,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="navbar flex items-center justify-between flex-wrap">
       <div className="titulo-principal marker:flex items-center flex-shrink-0 text-black mr-6">
-        <NavLink className={"flex"} to="/">
+        <NavLink className={"flex"} role="button" to="/">
           <svg
             className="fill-current h-8 w-8 mr-2"
             width="54"
@@ -25,6 +29,7 @@ const Navbar = () => {
           Viviendo en Amarillo
         </NavLink>
       </div>
+
       <div className="block lg:hidden">
         <button
           className="flex items-center px-3 py-2 border rounded text-white border-violet-500 hover:text-violet-400 hover:border-white"
@@ -49,6 +54,7 @@ const Navbar = () => {
             className={
               "flex mt-4 lg:inline-block lg:mt-0 text-violet-500 hover:text-white mr-4"
             }
+            role="button"
             to="/blog"
           >
             Blog
@@ -58,6 +64,7 @@ const Navbar = () => {
             className={
               "flex mt-4 lg:inline-block lg:mt-0 text-violet-500 hover:text-white mr-4"
             }
+            role="button"
             to="/comunidad"
           >
             Comunidad
@@ -67,37 +74,69 @@ const Navbar = () => {
             className={
               "flex mt-4 lg:inline-block lg:mt-0 text-violet-500 hover:text-white mr-4"
             }
+            role="button"
             to="/productosyterapias"
           >
             Terapias y Productos
           </NavLink>
         </div>
-        <div className="space-x-3">
-          <UserIcon className={"inline-block"} width="20px" fill="black" />
-          <NavLink
-            className={
-              "boton-sesion-registro inline-block px-4 py-2 leading-none border rounded text-white border-violet-500 hover:border-transparent hover:text-violet-400 hover:bg-white mt-4 lg:mt-0"
-            }
-            to="/Login"
-          >
-            Inicio de sesión
-          </NavLink>
-          <NavLink
-            className={
-              "boton-sesion-registro inline-block px-4 py-2 leading-none border rounded text-white border-violet-500 hover:border-transparent hover:text-violet-400 hover:bg-white mt-4 lg:mt-0"
-            }
-            to="/Register"
-          >
-            Registro
-          </NavLink>
 
-          {/* Activar en la sesion de usuario unicamente */}
-          {/* <NavLink className={"nav-carrito"} to="/carrito"> */}
-          {/* {" "}
+        {user ? (
+          <>
+            <div className=" space-x-6 text-xl font-bold">
+              <NavLink to="/dashboard" role="button">
+                Mis Publicaciones
+              </NavLink>
+              <NavLink to="/profile" role="button">
+                Mi perfil
+              </NavLink>
+              <NavLink to="/favorites" role="button">
+                {favorites.length}
+                <i>❤️</i>
+                Mis Favoritos
+              </NavLink>
+              <button
+                className={
+                  "boton-sesion-registro inline-block px-4 py-2 leading-none border rounded text-white border-violet-500 hover:border-transparent hover:text-violet-400 hover:bg-white mt-4 lg:mt-0"
+                }
+                role="button"
+                onClick={logout}
+              >
+                Cerrar Sesión
+              </button>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="space-x-3">
+              <UserIcon className={"inline-block"} width="20px" fill="black" />
+              <NavLink
+                className={
+                  "boton-sesion-registro inline-block px-4 py-2 leading-none border rounded text-white border-violet-500 hover:border-transparent hover:text-violet-400 hover:bg-white mt-4 lg:mt-0"
+                }
+                role="button"
+                to="/Login"
+              >
+                Inicio de sesión
+              </NavLink>
+              <NavLink
+                className={
+                  "boton-sesion-registro inline-block px-4 py-2 leading-none border rounded text-white border-violet-500 hover:border-transparent hover:text-violet-400 hover:bg-white mt-4 lg:mt-0"
+                }
+                role="button"
+                to="/Register"
+              >
+                Registro
+              </NavLink>
+            </div>
+          </>
+        )}
+        {/* Activar en la sesion de usuario unicamente */}
+        {/* <NavLink className={"nav-carrito"} to="/carrito"> */}
+        {/* {" "}
             Carrito 🛒 */}
-          {/* {sumaTotalPizzasCarrito.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'})} */}
-          {/* </NavLink> */}
-        </div>
+        {/* {sumaTotalPizzasCarrito.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'})} */}
+        {/* </NavLink> */}
       </div>
     </nav>
   );

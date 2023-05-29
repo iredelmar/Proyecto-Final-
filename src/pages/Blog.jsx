@@ -4,7 +4,12 @@ const Blog = () => {
   return (
     <div>
       <h1 className="titulo-form text-gray-700 font-bold mb-10">Blog</h1>
+<div>
+<h1 className="titulo-form text-black" >1 de cada 10 mujeres sufre de Endometriosis</h1>
 
+<p className="text-info py-6 mb-6 font-semibold text-gray-600 drop-shadow">Aquí puedes ver videos de experiencias y más detalles sobre esta condición</p>
+
+</div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
         <iframe
           className="video w-full"
