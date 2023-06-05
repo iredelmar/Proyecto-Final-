@@ -172,69 +172,6 @@ const Register = () => {
         </div>
       </div>
 
-      {/* <div className="flex flex-wrap -mx-10 mb-2">
-        <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-          <label
-            className="block tracking-wide text-gray-700 text-s font-bold mb-2"
-            htmlFor="grid-city"
-          >
-            Comuna
-          </label>
-          <input
-            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            id="grid-city"
-            type="text"
-            placeholder="Santiago"
-            value={comuna}
-            onChange={(e) => setComuna(e.target.value)}
-          />
-        </div>
-        <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-          <label
-            className="block tracking-wide text-gray-700 text-s font-bold mb-2"
-            htmlFor="grid-state"
-          >
-            Región
-          </label>
-          <div className="relative">
-            <select
-              className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-state"
-              value={region}
-              onChange={(e) => setRegion(e.target.value)}
-            >
-              <option>Metropolitana</option>
-              <option>Los Lagos</option>
-              <option>Valparaíso</option>
-            </select>
-            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-              <svg
-                className="fill-current h-4 w-4"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-              >
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-          <label
-            className="block tracking-wide text-gray-700 text-s font-bold mb-2"
-            htmlFor="grid-zip"
-          >
-            Teléfono
-          </label>
-          <input
-            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            id="grid-zip"
-            type="text"
-            placeholder="+569........"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
-        </div>
-      </div> */}
       <button
         className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white  py-2 px-4 rounded mt-6"
         type="submit"

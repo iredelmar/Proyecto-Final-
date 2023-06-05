@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { ProductContext } from "../context/ProductContext";
 import { useParams } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
+import Swal from "sweetalert2";
 
 const Update = () => {
   const { id } = useParams();
@@ -33,6 +34,7 @@ const Update = () => {
     };
     updateProduct(newProduct);
     console.log("editado");
+    Swal.fire("Publicación Actualizada");
   };
 
   return (

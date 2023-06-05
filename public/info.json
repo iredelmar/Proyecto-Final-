@@ -1,0 +1,35 @@
+{"articles": [
+
+    {
+      "id": "1",
+      "title": "Eventos de la comunidad",
+      "img": "https://www.cronicamadrid.com/fotos/1433/mujeresendo_thumb_760.jpg",
+    },
+    {
+      "id": "2",
+      "title": "Recomendaciones",
+      "img": "https://e00-telva.uecdn.es/assets/multimedia/imagenes/2018/06/12/15287935200618.jpg",
+    },
+    {
+      "id": "3",
+      "title": "Listado de Médicos",
+      "img": "https://i0.wp.com/aldiachile.microjuris.com/wp-content/uploads/2020/09/shutterstock_1121385623-1.jpg?resize=610%2C343&ssl=1",
+    },
+    {
+      "id": "4",
+      "title": "Descuentos en Laboratorio e Imagenología",
+      "img": "https://medicoplus.com/_next/image?url=https%3A%2F%2Fplustatic.com%2F6366%2Fconversions%2Ftipos-resonancia-magnetica-large.jpg&w=1280&q=75",
+    },
+    {
+      "id": "5",
+      "title": "  Fundaciones y cuentas aliadas",
+      "img": "https://www.laboratorioblanco.cl/wp-content/uploads/2022/03/2-1.jpg",
+    },
+    {
+      "id": "6",
+      "title": " Listado de Médicos Especialistas en Endometriosis",
+      "img": "https://i0.wp.com/aldiachile.microjuris.com/wp-content/uploads/2020/09/shutterstock_1121385623-1.jpg?resize=610%2C343&ssl=1",
+    }
+
+]
+}

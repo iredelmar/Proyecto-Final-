@@ -128,15 +128,13 @@ const Navbar = () => {
               >
                 Registro
               </NavLink>
+              <NavLink className=" space-x-6 text-xl font-bold" to="/cart" role="button">
+               Mi Carrito 🛒
+              </NavLink>
             </div>
           </>
         )}
-        {/* Activar en la sesion de usuario unicamente */}
-        {/* <NavLink className={"nav-carrito"} to="/carrito"> */}
-        {/* {" "}
-            Carrito 🛒 */}
-        {/* {sumaTotalPizzasCarrito.toLocaleString('es-CL', {style: 'currency', currency: 'CLP'})} */}
-        {/* </NavLink> */}
+       
       </div>
     </nav>
   );

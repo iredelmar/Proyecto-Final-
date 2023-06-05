@@ -13,7 +13,9 @@ import Dashboard from "./pages/Dashboard";
 import Update from "./pages/Update";
 import Profile from "./pages/Profile";
 import Favorites from "./pages/Favorites";
+import Cart from "./pages/Cart";
 import Footer from "./components/Footer";
+import CommunityInfo from "./pages/CommunityInfo";
 
 const App = () => {
   const { user } = useContext(UserContext);
@@ -29,6 +31,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/comunidad" element={<Comunidad />} />
+            <Route path="/communityinfo/:id" element={<CommunityInfo/>} />
             <Route path="/productosyterapias" element={<Products />} />
             <Route
               path="/login"
@@ -55,6 +58,7 @@ const App = () => {
               path="/update/:id"
               element={user ? <Update /> : <Navigate to="/login" />}
             />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
         </div>
       </div>

@@ -1,48 +1,48 @@
 [
   {
-    "id": "1",
+    "id": "P01",
     "user": "ire@viviendoenamarillo.com",
-    "description": "En el tratamiento para la endometriosis, además de poder utilizarse terapia hormonal y cirugía, la MTC (acupuntura combinada con fitoterapia y dietética) puede ser un método complementario y muy beneficioso para aliviar esta dolencia, sin efectos secundarios. Desde hace muchos años varios estudios clínicos y la propia experiencia han demostrado que la aplicación de la acupuntura es eficaz para aliviar el dolor pélvico y disminuir la inflamación abdominal, mejorando, por ello, las funciones ováricas, regulando el ciclo menstrual y aumentando la posibilidad de embarazo. La acupuntura, por otra parte, es beneficiosa para reducir un eventual desarrollo de esta patología y la recaída en la misma.",
+    "desc": "En el tratamiento para la endometriosis, además de poder utilizarse terapia hormonal y cirugía, la MTC (acupuntura combinada con fitoterapia y dietética) puede ser un método complementario y muy beneficioso para aliviar esta dolencia, sin efectos secundarios. Desde hace muchos años varios estudios clínicos y la propia experiencia han demostrado que la aplicación de la acupuntura es eficaz para aliviar el dolor pélvico y disminuir la inflamación abdominal, mejorando, por ello, las funciones ováricas, regulando el ciclo menstrual y aumentando la posibilidad de embarazo. La acupuntura, por otra parte, es beneficiosa para reducir un eventual desarrollo de esta patología y la recaída en la misma.",
     "img": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2018/06/08/15284645436229.jpg",
     "title": "Acupuntura",
     "price": 14990
   },
   { 
-    "id": "2",
+    "id": "P02",
     "user": "ire@viviendoenamarillo.com",
-    "description": "Las investigaciones demuestran que el yoga ayuda a controlar los síntomas de la endometriosis. Los estilos de yoga más lentos, como el yoga restaurativo, el yin yoga y el hatha yoga, son los más adecuados para la mayoría de las personas con endometriosis, estos estilos ayudan a crear suavemente más espacio y relajación en la zona pélvica y a calmar la mente. .",
+    "desc": "Las investigaciones demuestran que el yoga ayuda a controlar los síntomas de la endometriosis. Los estilos de yoga más lentos, como el yoga restaurativo, el yin yoga y el hatha yoga, son los más adecuados para la mayoría de las personas con endometriosis, estos estilos ayudan a crear suavemente más espacio y relajación en la zona pélvica y a calmar la mente. .",
     "img": "https://post.greatist.com/wp-content/uploads/sites/2/2020/06/GRT-female-yoga-at-home-peaceful-1200x628-facebook-1200x628.jpg",
     "title": "Clases de Yoga",
     "price": 7990
   },
 
   {
-    "description": "La Alimentación es un factor determinante en el manejo de la endometriosis. Seguir la dieta correcta puede ayudarte a minimizar el desajuste hormonal, la inflamación abdominal, el dolor o los problemas digestivos que provoca la endometriosis.",
-    "id": "3",
+    "id": "P03",
     "user": "ire@viviendoenamarillo.com",
+    "desc": "La Alimentación es un factor determinante en el manejo de la endometriosis. Seguir la dieta correcta puede ayudarte a minimizar el desajuste hormonal, la inflamación abdominal, el dolor o los problemas digestivos que provoca la endometriosis.",
     "img": "https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2021/05/nutricionista-consulta-2338387.jpg?tf=3840x",
     "title": "Consultas de Nutrición",
     "price": 13990
   },
   {
-    "id": "4",
+    "id": "P04",
     "user": "ire@viviendoenamarillo.com",
-    "description": "El tratamiento psicológico es un apoyo necesario para las mujeres que padecen endometriosis para ayudarla en el manejo de dolor y los mecanismos de afrontamiento de la enfermedad.",
+    "desc": "El tratamiento psicológico es un apoyo necesario para las mujeres que padecen endometriosis para ayudarla en el manejo de dolor y los mecanismos de afrontamiento de la enfermedad.",
     "img": "https://www.mundopsicologos.com/site/article/58815/49113/necesitas-ayuda-psicologica-consejos-para-saber-cuando-acudir-a-un-profesional-0_ai1.jpg",
     "title": "Acompañamiento psicológico",
     "price": 9990
   },
-  { "id": "5",
-  "user": "ire@viviendoenamarillo.com",
-    "description": "Desde la antigüedad, algunos remedios con plantas medicinales se han considerado un complemento para combatir la endometriosis. Si bien no son un tratamiento de primera elección, su ingesta puede ayudar a regular la producción de hormonas y a disminuir los síntomas.",
+  { "id": "P05",
+    "user": "ire@viviendoenamarillo.com",
+    "desc": "Desde la antigüedad, algunos remedios con plantas medicinales se han considerado un complemento para combatir la endometriosis. Si bien no son un tratamiento de primera elección, su ingesta puede ayudar a regular la producción de hormonas y a disminuir los síntomas.",
     "img": "https://www.semana.com/resizer/fPnvZ0aWI3PUKZNlIvfxXUa1o6o=/480x270/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/LDGG2HFPVZGZLOJTUMESND6LRU.jpg",
     "title": "Hierbas",
     "price": 2990
   },
   {
-    "id": "6",
+    "id": "P06",
     "user": "ire@viviendoenamarillo.com",
-    "description": "Los aceites esenciales como romero , salvia,lavanda , manzanilla, menta , melissa , geranium,incienso, jengibre y myrra son una excelente alternativa dentro de las terapias complementarias, para el manejo integral de la endometriosis , debido a sus propiedades antiflamatorias.",
+    "desc": "Los aceites esenciales como romero , salvia,lavanda , manzanilla, menta , melissa , geranium,incienso, jengibre y myrra son una excelente alternativa dentro de las terapias complementarias, para el manejo integral de la endometriosis , debido a sus propiedades antiflamatorias.",
     "img": "https://primicia.com.ve/wp-content/uploads/2022/09/descarga-5.jpeg",
     "title": "Aceites",
     "price": 6990

@@ -2,9 +2,12 @@ import React, { useContext, useState } from "react";
 import { ProductContext } from "../context/ProductContext";
 import { FavoritesContext } from "../context/FavoritesContext";
 import { IconHeartFilled } from "@tabler/icons-react";
+import  AddProduct  from "../components/AddProduct";
+
 
 const Products = () => {
-  const { products } = useContext(ProductContext);
+  const { products, addProduct } = useContext(ProductContext);
+
   const { favorites, addFavorite, deleteFavorite } =
     useContext(FavoritesContext);
   const [filtro, setFiltro] = useState("");
@@ -91,9 +94,9 @@ const Products = () => {
               })}
             </div>
             <div className="products-buttons flex items-center mt-4">
-              <button className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white py-2 px-4 rounded">
-                Comprar
-              </button>
+
+            <AddProduct product={product} addProduct={addProduct} />
+          
               <button
                 className={`mr-2 ${
                   isFavorite(product.id) ? "text-red-500" : "text-gray-500"

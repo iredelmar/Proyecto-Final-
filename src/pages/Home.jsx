@@ -5,16 +5,16 @@ import { RxDotFilled } from "react-icons/rx";
 const Home = () => {
   const slides = [
     {
-      url: "https://images.squarespace-cdn.com/content/v1/5b1d5b5489c172a502087318/1552950039800-K0MXRZHU0EZDTTKFD9K5/HEADER-endometriosis.jpg?format=1000w",
+      url: "https://i.ytimg.com/vi/V1Ikdr3VRMw/maxresdefault.jpg",
     },
     {
-      url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_GM1PYEa4gU0XmUQ6t60r1yDmF3BEZ84oDg&usqp=CAU",
+      url: "https://www.jnjmedtech.com/sites/default/files/styles/crop_presets/public/2023-03/CARD_0.png?itok=_aGBp-y9",
     },
     {
       url: "https://sa1s3optim.patientpop.com/assets/production/practices/bca61725a26329e3aed91cb612ccbe8e0cce2d8d/images/2460183.jpg",
     },
     {
-      url: "https://static.wixstatic.com/media/724dfb_72d13e8857c14cc797e8e8f35fac2cfd~mv2.png/v1/fill/w_1021,h_378,al_c,lg_1,q_90,enc_auto/724dfb_72d13e8857c14cc797e8e8f35fac2cfd~mv2.png",
+      url: "https://biotrend.com.ar/landing/images/easyblog_articles/4/EndometriosisBlog.jpg",
     },
   ];
 
@@ -85,10 +85,7 @@ const Home = () => {
  esto ocurre sobre y alrededor de los órganos en la cavidad pélvica.
  <br />
  <br />
-Sin embargo, se han encontrado casos de endometriosis en cualquier órgano y debido a que el tejido no puede salir del cuerpo, puede causar adherencias, nódulos y lesiones, y desencadenar una respuesta inflamatoria. 
-<br />
-<br />
-En casos severos estas adherencias y nódulos pueden generar compromiso de otros órganos, como el diafragma, intestino, vejiga, estómago, incluso hay casos donde se han encontrado nódulos en el cerebro, generando ademásdolores incapacitantes, además de infertilidad.</p>
+En casos severos este tejido puede infiltrar otros órganos, además de causar adherencias y nódulos que pueden generar compromiso de órganos como el diafragma, intestino, vejiga, estómago, incluso hay casos donde se han encontrado tejido endometrial en el cerebro.</p>
 
 </div>
     </>
