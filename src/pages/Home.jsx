@@ -85,7 +85,7 @@ const Home = () => {
  esto ocurre sobre y alrededor de los órganos en la cavidad pélvica.
  <br />
  <br />
-En casos severos este tejido puede infiltrar otros órganos, además de causar adherencias y nódulos que pueden generar compromiso de órganos como el diafragma, intestino, vejiga, estómago, incluso hay casos donde se han encontrado tejido endometrial en el cerebro.</p>
+Este tejido puede llegar a infiltrar órganos, causar adherencias y nódulos, el 20% de las mujeres con endometriosis terminan  en cirugía por compromiso de algún órgano a causa de esta condición, los casos más comunes son endometriosis en el diafragma, intestino, vejiga, estómago, incluso hay casos donde se ha encontrado tejido endometrial en el cerebro.</p>
 
 </div>
     </>

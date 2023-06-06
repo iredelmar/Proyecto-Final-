@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { ProductContext } from '../context/ProductContext';
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 
@@ -7,6 +8,7 @@ const Cart = () => {
 
   const { cart, addProduct, calculateTotalPrice, calculateItems, products, setCart } =
     useContext(ProductContext);
+    const navigate = useNavigate();
     console.log(cart);
 
   const handleAddQuantity = (product) => {
@@ -44,6 +46,11 @@ const Cart = () => {
   };
 
 
+  const handleClick = () => {
+    navigate("/productosyterapias");
+  };
+
+
   return (
     <>
       <div  className="container-carrito my-2 gap-y-4">
@@ -55,7 +62,7 @@ const Cart = () => {
           {cart.map((product) => (
             <div key={product.id} className="item-carrito flex gap-x-4 my-2">
               <img className="img-cart" width={"20%"} src={product.img} alt="Product" />
-              <h3 className="flex-1 font-bold text-2xl" >{product.title}</h3>
+              <h3 className="text-itemcart flex-1 font-bold text-2xl" >{product.title}</h3>
               <p>
                 {(product.quantity * product.price).toLocaleString("es-CL", {
                   style: "currency",
@@ -81,7 +88,7 @@ const Cart = () => {
               </button>
 
               <button onClick={() => handleDeleteItem(product)}>            
-              <ion-icon name="trash-outline"></ion-icon>
+              <ion-icon className="h-6" name="trash-outline"></ion-icon>
               </button>
 
 
@@ -99,12 +106,20 @@ const Cart = () => {
           currency: "CLP",
         })}
       </h2>
+      <div className='btn-cart'>
       <button
         className="mt-6 py-2 px-4 bg-purple-500 text-white rounded"
         onClick={handleGoToPayment}
         >
         Ir a Pagar
       </button>
+      <button
+        className="mt-6 py-2 px-4 bg-gray-500 text-white rounded"
+        onClick={handleClick}
+        >
+        Volver
+      </button>
+    </div>
     </div>
   </>
 );

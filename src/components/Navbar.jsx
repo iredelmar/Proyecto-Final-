@@ -3,10 +3,13 @@ import UserIcon from "./icons/UserIcon";
 import { useContext } from "react";
 import { UserContext } from "../context/UserContext";
 import { FavoritesContext } from "../context/FavoritesContext";
+import { ProductContext } from '../context/ProductContext';
+
 
 const Navbar = () => {
   const { user, logout } = useContext(UserContext);
   const { favorites } = useContext(FavoritesContext);
+  const { calculateTotalPrice} = useContext(ProductContext);
 
   const handleMenu = () => {
     console.log("me diste click");
@@ -79,6 +82,7 @@ const Navbar = () => {
           >
             Terapias y Productos
           </NavLink>
+
         </div>
 
         {user ? (
@@ -104,6 +108,19 @@ const Navbar = () => {
               >
                 Cerrar Sesión
               </button>
+
+              
+          <NavLink
+                className=" space-x-6 text-xl font-bold"
+                to="/cart"
+                role="button"
+              >
+                Mi Carrito 🛒
+                {calculateTotalPrice().toLocaleString("es-CL", {
+                  style: "currency",
+                  currency: "CLP",
+                })}
+              </NavLink>
             </div>
           </>
         ) : (
@@ -128,13 +145,22 @@ const Navbar = () => {
               >
                 Registro
               </NavLink>
-              <NavLink className=" space-x-6 text-xl font-bold" to="/cart" role="button">
-               Mi Carrito 🛒
+              
+          <NavLink
+                className=" space-x-6 text-xl font-bold"
+                to="/cart"
+                role="button"
+              >
+                Mi Carrito 🛒
+                {calculateTotalPrice().toLocaleString("es-CL", {
+                  style: "currency",
+                  currency: "CLP",
+                })}
               </NavLink>
+             
             </div>
           </>
         )}
-       
       </div>
     </nav>
   );

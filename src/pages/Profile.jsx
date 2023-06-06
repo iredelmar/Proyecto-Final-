@@ -9,8 +9,6 @@ const Profile = () => {
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  // const [comuna, setComuna] = useState("");
-  // const [region, setRegion] = useState("");
   const [password, setPassword] = useState("");
 
   useEffect(() => {
@@ -19,9 +17,7 @@ const Profile = () => {
     setEmail(user.email);
     setPhone(user.phone);
     setPassword(user.password);
-    // setComuna(user.comuna);
-    // setRegion(user.region);
-  }, []);
+    }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,8 +26,6 @@ const Profile = () => {
       email: email,
       name: name,
       lastname: lastname,
-      // comuna: comuna,
-      // region: region,
       phone: phone,
       password: password,
       id: user.id,

@@ -53,7 +53,6 @@ const Register = () => {
       name,
       lastname,
       email,
-      // phone,
       password,
       id: Date.now(),
       // el date now no se usa, es un truco para generar un numnero que representa el tiempo en que se hizo clic usando la hora del computador

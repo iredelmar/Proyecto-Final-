@@ -155,8 +155,19 @@ font-size: 20px;
   text-align: center;
 }
 
+.btn-cart{
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+
 .item-carrito {
   align-items: center;
+}
+
+.text-itemcart{
+  text-align: left;
+  margin-left: 80px;
 }
 
 .footer {
