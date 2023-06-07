@@ -132,7 +132,8 @@ const Dashboard = () => {
           Agregar
         </button>
       </form>
-
+      <h1 className=" text-gray-700 font-bold mb-12 text-lg text-center mt-10">
+        Mis Artículos publicados: </h1>
       <div>
         {products
           .filter((product) => product.user === user.email)
